@@ -32,8 +32,12 @@ body{
     justify-content: center;
     color: white;
 }
-.post:hover .post-overlay{
-    display: flex;
+.post .post-overlay {
+  display: none;
+}
+
+.post.active .post-overlay {
+  display: flex;
 }
 .post-likes,
 .post-comments{
